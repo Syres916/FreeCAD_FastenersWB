@@ -37,7 +37,7 @@ except AttributeError:
     def _fromUtf8(s):
         return s
 
-minimumLength = 1.0
+minimumLength = 1.5
 
 class Ui_DlgChangeParams(object):
     def setupUi(self, DlgChangeParams):
