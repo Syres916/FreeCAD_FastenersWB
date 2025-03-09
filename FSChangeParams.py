@@ -37,6 +37,7 @@ except AttributeError:
     def _fromUtf8(s):
         return s
 
+minimumLength = 1.0
 
 class Ui_DlgChangeParams(object):
     def setupUi(self, DlgChangeParams):
@@ -90,7 +91,7 @@ class Ui_DlgChangeParams(object):
         self.checkSetLength.setObjectName(_fromUtf8("checkSetLength"))
         self.layoutSetVarLength.addWidget(self.checkSetLength)
         self.spinLength = QtGui.QDoubleSpinBox(self.mainGroup)
-        self.spinLength.setMinimum(2.0)
+        self.spinLength.setMinimum(minimumLength)
         self.spinLength.setMaximum(9999.99)
         self.spinLength.setObjectName(_fromUtf8("spinLength"))
         self.layoutSetVarLength.addWidget(self.spinLength)
